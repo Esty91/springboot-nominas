@@ -2,7 +2,6 @@ package com.companyname.nominas.repositorio;
 
 import java.util.List;
 
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -10,8 +9,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.companyname.nominas.modelo.Empleado;
-
-
 
 @Repository(value = "empleadoDao")
 public class JPAEmpleadoDao implements EmpleadoDao {
@@ -37,14 +34,11 @@ public class JPAEmpleadoDao implements EmpleadoDao {
 		em.merge(emp);
 	}
 
-	public boolean aniadirEmpleado(Empleado oEmpleado1) {
-		
-		return false;
-	}
-
+	@Transactional(readOnly = true)
+	@SuppressWarnings("unchecked")
 	public List<Empleado> buscarEmpleadoPorDni(Empleado oEmpleado) {
-		
-		return null;
+		String dni = oEmpleado.getDni();
+		return em.createQuery("select e from Empleado e where dni ='" + dni + "'").getResultList();
 	}
 
 	@Transactional(readOnly = true)
@@ -52,26 +46,32 @@ public class JPAEmpleadoDao implements EmpleadoDao {
 	public List<Empleado> buscarEmpleadoPorNombre(Empleado oEmpleado) {
 
 		String nombre = oEmpleado.getNombre();
-		return em.createQuery("select e from Empleado where nombre ='" + nombre + "'").getResultList();
+		return em.createQuery("select e from Empleado e where nombre ='" + nombre + "'").getResultList();
 	}
 
+	@Transactional(readOnly = true)
+	@SuppressWarnings("unchecked")
 	public List<Empleado> buscarEmpleadoPorSexo(Empleado oEmpleado) {
-		
-		return null;
+		String sexo = oEmpleado.getSexo();
+		return em.createQuery("select e from Empleado e where sexo='" + sexo + "'").getResultList();
 	}
 
+	@Transactional(readOnly = true)
+	@SuppressWarnings("unchecked")
 	public List<Empleado> buscarEmpleadoPorCategoria(Empleado oEmpleado) {
-		
-		return null;
+		byte categoria = oEmpleado.getCategoria();
+		return em.createQuery("select e from Empleado e where categoria='" + categoria + "'").getResultList();
 	}
 
+	@Transactional(readOnly = true)
+	@SuppressWarnings("unchecked")
 	public List<Empleado> buscarEmpleadoPorAnios(Empleado oEmpleado) {
-		
-		return null;
+		byte anio = oEmpleado.getAnio();
+		return em.createQuery("select e from Empleado e where anio='" + anio + "'").getResultList();
 	}
 
 	public boolean modificarEmpleado(Empleado oEmpleado, Empleado oEmpleadoModificado) {
-		
+
 		return false;
 	}
 

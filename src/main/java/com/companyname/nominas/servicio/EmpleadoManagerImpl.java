@@ -21,11 +21,6 @@ public class EmpleadoManagerImpl implements EmpleadoManager {
 		this.empleadoDao = empleadoDao;
 	}
 
-	public boolean aniadirEmpleado(Empleado oEmpleado1) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
 	public List<Empleado> mostrarEmpleados() {
 		return empleadoDao.mostrarEmpleados();
 	}

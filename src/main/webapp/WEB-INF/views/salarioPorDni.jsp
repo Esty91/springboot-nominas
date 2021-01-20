@@ -24,8 +24,8 @@
 
 		</tbody>
 	</table>
-			<a href="index.jsp"><input type="submit" name="Opcion"
-			value="volver"></a>
+			<a href="mostrarSalario.htm"><input type="submit" name="Opcion" class="btn btn-info"
+		value="volver"></a>
 	
 </body>
 </html>

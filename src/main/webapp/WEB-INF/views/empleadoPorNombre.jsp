@@ -25,5 +25,5 @@
 		</tbody>
 	</table>
 	<br>
-	<a href="mostrarPorNombre.htm"><input type="submit" name="Opcion"
+	<a href="mostrarPorNombre.htm"><input type="submit" name="Opcion" class="btn btn-info"
 		value="volver"></a>

@@ -4,10 +4,7 @@ import java.util.List;
 
 import com.companyname.nominas.modelo.Empleado;
 
-
 public interface EmpleadoDao {
-
-	public boolean aniadirEmpleado(Empleado oEmpleado1);
 
 	public List<Empleado> mostrarEmpleados();
 
@@ -22,6 +19,5 @@ public interface EmpleadoDao {
 	public List<Empleado> buscarEmpleadoPorAnios(Empleado oEmpleado);
 
 	public boolean modificarEmpleado(Empleado oEmpleado, Empleado oEmpleadoModificado);
-	
-	
+
 }

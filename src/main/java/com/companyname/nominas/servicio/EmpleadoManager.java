@@ -6,11 +6,7 @@ import com.companyname.nominas.modelo.Empleado;
 
 import java.io.Serializable;
 
-
-
-public interface EmpleadoManager extends Serializable{
-
-	public boolean aniadirEmpleado(Empleado oEmpleado1);
+public interface EmpleadoManager extends Serializable {
 
 	public List<Empleado> mostrarEmpleados();
 
@@ -25,7 +21,5 @@ public interface EmpleadoManager extends Serializable{
 	public List<Empleado> buscarEmpleadoPorAnios(Empleado oEmpleado);
 
 	public boolean modificarEmpleado(Empleado oEmpleado, Empleado oEmpleadoModificado);
-
-	
 
 }

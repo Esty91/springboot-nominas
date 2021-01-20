@@ -17,6 +17,7 @@
   <br>
   <input type="submit" value="Execute">
 </form:form>
-<a href="<c:url value="modificarDatos.htm"/>">Volver</a>
+<a href="modificarDatos.htm"><input type="submit" name="Opcion" class="btn btn-info"
+		value="volver"></a>
 </body>
 </html>

@@ -17,8 +17,9 @@
     </tr>
   </table>
   <br>
-  <input type="submit" value="Execute">
+  <input type="submit" class="btn btn-secondary" value="Execute">
 </form:form>
-<a href="<c:url value="index.jsp"/>">Volver</a>
+<a href="hello.htm"><input type="submit" name="Opcion" class="btn btn-info"
+		value="volver"></a>
 </body>
 </html>

@@ -8,16 +8,17 @@
 </head>
 <body>
 	<h2>Buscar empleado por:</h2>
-<a href="<c:url value="mostrarPorNombre.htm"/>"><input type="submit" name="Opcion" value="Nombre"></a>
+<a href="<c:url value="mostrarPorNombre.htm"/>"><input type="submit" name="Opcion" class="btn btn-secondary" value="Nombre"></a>
 	<br><br>
-	<a href="<c:url value="buscarPorDni.htm"/>"><input type="submit" name="Opcion" value="Dni"></a>
+	<a href="<c:url value="mostrarPorDni.htm"/>"><input type="submit" name="Opcion" class="btn btn-secondary" value="Dni"></a>
 	<br><br>
-	<a href="<c:url value="buscarPorSexo.htm"/>"><input type="submit" name="Opcion" value="Sexo"></a>
+	<a href="<c:url value="mostrarPorSexo.htm"/>"><input type="submit" name="Opcion" class="btn btn-secondary" value="Sexo"></a>
 	<br><br>
-	<a href="<c:url value="buscarPorAnios.htm"/>"><input type="submit" name="Opcion" value="Anios trabajados"></a>
+	<a href="<c:url value="mostrarPorAnios.htm"/>"><input type="submit" name="Opcion" class="btn btn-secondary" value="Anios trabajados"></a>
 	<br><br>
-	<a href="<c:url value="buscarPorCategoria.htm"/>"><input type="submit" name="Opcion" value="Categoria"></a>
+	<a href="<c:url value="mostrarPorCategoria.htm"/>"><input type="submit" name="Opcion" class="btn btn-secondary" value="Categoria"></a>
 	<br><br>
-	<a href="<c:url value="hello.htm"/>">Volver</a>
+	<a href="hello.htm"><input type="submit" name="Opcion" class="btn btn-info"
+		value="volver"></a>
 </body>
 </html>
